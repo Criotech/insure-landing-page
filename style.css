@@ -248,11 +248,19 @@ footer li a {
         flex-direction: column;
     }
 
+    nav {
+        padding: 20px 0;
+    }
+
     nav .icon-hamburger {
         display: flex;
         background-color: transparent;
         border: 0;
         cursor: pointer;
+    }
+
+    nav .icon-hamburger:focus {
+        outline: none;
     }
 
     nav .icon-hamburger .close {
