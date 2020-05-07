@@ -22,6 +22,7 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -29,11 +30,16 @@
   <nav>
     <div class="container">
       <div class="flex">
-        <div>
-          <img src="./images/logo.svg" alt="">
+        <div class='image-wrapper'>
+          <img src="./images/logo.svg" alt="logo">
         </div>
 
-        <ul>
+        <button class="icon-hamburger" id="hamburger">
+          <img class="open" src="./images/icon-hamburger.svg" alt="icon-hamburger">
+          <img class="close" src="./images/icon-close.svg" alt="icon-close">
+        </button>
+
+        <ul id="menu"> 
           <li><a href="">How we work</a></li>
           <li><a href="">Blog </a></li>
           <li><a href="">Account </a></li>
@@ -45,7 +51,7 @@
 
   <header>
     <div class="container">
-      <div class="flex align-start">
+      <div class="flex align-start reverse-mobile">
         <div>
           <h1 class="has-line-top">
             Humanizing your insurance.
