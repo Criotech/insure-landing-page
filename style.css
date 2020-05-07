@@ -98,7 +98,12 @@ p {
 
 /* Navigation Styling */
 nav {
-    padding: 20px 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
 }
 
 nav .icon-hamburger {
@@ -107,6 +112,7 @@ nav .icon-hamburger {
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style-type: none;
     padding: 0;
 }
@@ -127,6 +133,7 @@ header {
     color: #fff;
     padding: 50px 0;
     position: relative;
+    margin-top: 80px;
     margin-bottom: 250px;
 }
 
@@ -248,11 +255,15 @@ footer li a {
         cursor: pointer;
     }
 
+    nav .icon-hamburger .close {
+        display: none;
+    }
+
     nav .icon-hamburger.show .open {
         display: none;
     }
 
-    nav .icon-hamburger .close {
+    nav .icon-hamburger.show .close {
         display: block;    
     }
 
